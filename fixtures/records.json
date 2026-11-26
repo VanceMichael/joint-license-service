@@ -1,0 +1,179 @@
+[
+  {
+    "id": "owner-a",
+    "kind": "owner",
+    "links": [],
+    "share": "0.60"
+  },
+  {
+    "id": "owner-b",
+    "kind": "owner",
+    "links": [],
+    "share": "0.40"
+  },
+  {
+    "id": "buyer-a",
+    "kind": "licensee",
+    "links": []
+  },
+  {
+    "id": "buyer-b",
+    "kind": "licensee",
+    "links": []
+  },
+  {
+    "id": "patent-a",
+    "kind": "patent",
+    "links": [
+      "owner-a",
+      "owner-b"
+    ],
+    "territories": [
+      "CN",
+      "SG"
+    ],
+    "uses": [
+      "sensor",
+      "robotics"
+    ],
+    "validFrom": "2026-01-01",
+    "validUntil": "2030-01-01"
+  },
+  {
+    "id": "patent-b",
+    "kind": "patent",
+    "links": [
+      "owner-a"
+    ],
+    "territories": [
+      "CN",
+      "SG"
+    ],
+    "uses": [
+      "sensor"
+    ],
+    "validFrom": "2026-01-01",
+    "validUntil": "2029-01-01"
+  },
+  {
+    "id": "mandate-a",
+    "kind": "mandate",
+    "links": [
+      "patent-a",
+      "owner-a"
+    ],
+    "territories": [
+      "CN",
+      "SG"
+    ],
+    "uses": [
+      "sensor"
+    ]
+  },
+  {
+    "id": "mandate-b",
+    "kind": "mandate",
+    "links": [
+      "patent-a",
+      "owner-b"
+    ],
+    "territories": [
+      "CN"
+    ],
+    "uses": [
+      "sensor"
+    ]
+  },
+  {
+    "id": "mandate-c",
+    "kind": "mandate",
+    "links": [
+      "patent-b",
+      "owner-a"
+    ],
+    "territories": [
+      "CN",
+      "SG"
+    ],
+    "uses": [
+      "sensor"
+    ]
+  },
+  {
+    "id": "request-a",
+    "kind": "license-request",
+    "links": [
+      "buyer-a",
+      "patent-a",
+      "patent-b"
+    ],
+    "territories": [
+      "CN"
+    ],
+    "use": "sensor",
+    "startsAt": "2026-12-01",
+    "until": "2027-12-01",
+    "exclusive": true
+  },
+  {
+    "id": "request-b",
+    "kind": "license-request",
+    "links": [
+      "buyer-b",
+      "patent-a"
+    ],
+    "territories": [
+      "CN"
+    ],
+    "use": "sensor",
+    "startsAt": "2027-01-01",
+    "until": "2027-06-01",
+    "exclusive": true
+  },
+  {
+    "id": "terms-a",
+    "kind": "commercial-terms",
+    "links": [
+      "request-a"
+    ],
+    "upfrontMinor": 100000,
+    "perUnitMinor": 7,
+    "shares": {
+      "owner-a": "0.60",
+      "owner-b": "0.40"
+    }
+  },
+  {
+    "id": "usage-a",
+    "kind": "incoming-usage",
+    "links": [
+      "buyer-a"
+    ],
+    "month": "2026-12",
+    "territory": "CN",
+    "units": 103,
+    "revision": 1
+  },
+  {
+    "id": "usage-a2",
+    "kind": "incoming-usage",
+    "links": [
+      "buyer-a"
+    ],
+    "month": "2026-12",
+    "territory": "CN",
+    "units": 97,
+    "revision": 2
+  },
+  {
+    "id": "dispute-a",
+    "kind": "incoming-legal-notice",
+    "links": [
+      "patent-a"
+    ],
+    "territory": "CN",
+    "use": "sensor",
+    "effective": "2027-01-03",
+    "reason": "title_dispute"
+  }
+]

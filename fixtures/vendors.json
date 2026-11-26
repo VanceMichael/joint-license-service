@@ -1,0 +1,28 @@
+[
+  {
+    "name": "escrow",
+    "required": [
+      "contractId",
+      "payer",
+      "amountMinor"
+    ],
+    "example": {
+      "contractId": "license-sample",
+      "payer": "buyer-a",
+      "amountMinor": 100000
+    }
+  },
+  {
+    "name": "signature",
+    "required": [
+      "contractId",
+      "partyId",
+      "termsDigest"
+    ],
+    "example": {
+      "contractId": "license-sample",
+      "partyId": "owner-a",
+      "termsDigest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  }
+]

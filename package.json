@@ -1,0 +1,14 @@
+{
+  "name": "joint-license-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.22.1"
+  },
+  "scripts": {
+    "test": "node --test support/*.test.mjs",
+    "build": "node --check support/vendor.mjs",
+    "partners": "node support/vendor.mjs"
+  }
+}

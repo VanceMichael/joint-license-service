@@ -1,0 +1,26 @@
+[
+  {
+    "id": "actor-1",
+    "role": "licensee",
+    "organisation": "owner-a",
+    "token": "synthetic-joint-license-service-licensee"
+  },
+  {
+    "id": "actor-2",
+    "role": "rightsholder",
+    "organisation": "owner-a",
+    "token": "synthetic-joint-license-service-rightsholder"
+  },
+  {
+    "id": "actor-3",
+    "role": "legal",
+    "organisation": "owner-a",
+    "token": "synthetic-joint-license-service-legal"
+  },
+  {
+    "id": "actor-4",
+    "role": "finance",
+    "organisation": "owner-a",
+    "token": "synthetic-joint-license-service-finance"
+  }
+]

@@ -2,25 +2,43 @@
   {
     "id": "actor-1",
     "role": "licensee",
-    "organisation": "owner-a",
-    "token": "synthetic-joint-license-service-licensee"
+    "organisation": "buyer-a",
+    "token": "synthetic-joint-license-service-licensee",
+    "subjectId": "buyer-a"
   },
   {
     "id": "actor-2",
     "role": "rightsholder",
     "organisation": "owner-a",
-    "token": "synthetic-joint-license-service-rightsholder"
+    "token": "synthetic-joint-license-service-rightsholder",
+    "subjectId": "owner-a"
   },
   {
     "id": "actor-3",
     "role": "legal",
     "organisation": "owner-a",
-    "token": "synthetic-joint-license-service-legal"
+    "token": "synthetic-joint-license-service-legal",
+    "subjectId": "owner-a"
   },
   {
     "id": "actor-4",
     "role": "finance",
     "organisation": "owner-a",
-    "token": "synthetic-joint-license-service-finance"
+    "token": "synthetic-joint-license-service-finance",
+    "subjectId": "owner-a"
+  },
+  {
+    "id": "licensee-b",
+    "role": "licensee",
+    "subjectId": "buyer-b",
+    "organisation": "buyer-b",
+    "token": "synthetic-q3-licensee-b"
+  },
+  {
+    "id": "rightsholder-b",
+    "role": "rightsholder",
+    "subjectId": "owner-b",
+    "organisation": "owner-b",
+    "token": "synthetic-q3-rightsholder-b"
   }
 ]

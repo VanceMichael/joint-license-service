@@ -4,7 +4,7 @@
 
 ## 环境与运行
 
-运行时为 Node.js 22.22.1，使用标准库，没有第三方 npm 依赖。`package-lock.json` 固定依赖清单。
+运行时为 Node.js 22.23.4，使用标准库，没有第三方 npm 依赖。`package-lock.json` 固定依赖清单。
 
 ```sh
 npm ci --ignore-scripts --no-audit --no-fund
